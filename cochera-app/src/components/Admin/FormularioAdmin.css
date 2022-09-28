@@ -1,0 +1,55 @@
+.all-form{
+    background-color: bisque;
+    padding-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.form-card{
+    text-align: center;
+    margin: 20px auto;
+    justify-content: center;
+    width: 600px;
+    border-radius: 10px;
+    padding: 30px 70px;
+    background-color: rgb(110, 187, 190);
+    
+}
+
+label{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.calendario{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.show-card{
+    margin: 0 auto;
+    justify-content: center;
+    padding-left: 10px;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(110, 187, 190);
+    border-radius: 10px;
+}
+
+.btn{
+    border-radius: 3px;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.btn-green{
+    color: white;
+    background-color:cornflowerblue;
+}

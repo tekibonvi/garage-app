@@ -1,6 +1,5 @@
-
 import './App.css';
-import FormularioAdmin from './components/Body/FormularioAdmin';
+import FormularioAdmin from './components/Admin/FormularioAdmin';
 
 
 

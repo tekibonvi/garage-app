@@ -8,7 +8,7 @@ function Calendario() {
 
   return (
     <div className='app'>
-        <div className='calendar-container'>
+        <div className='center'>
             <Calendar onChange={setDate} value={date} />
         </div>
         <p>
