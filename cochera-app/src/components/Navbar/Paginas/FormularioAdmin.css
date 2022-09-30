@@ -1,6 +1,10 @@
+*{
+    text-decoration: none;
+}
 .all-form{
     background-color: bisque;
     padding-bottom: 20px;
+    height: 100vh;
 }
 
 .title{

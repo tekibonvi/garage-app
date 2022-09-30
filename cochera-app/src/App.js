@@ -1,5 +1,5 @@
 import './App.css';
-import FormularioAdmin from './components/Admin/FormularioAdmin';
+import FormularioAdmin from './components/Navbar/Paginas/FormularioAdmin';
 import {useFirebaseApp} from 'reactfire';
 
 
