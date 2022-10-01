@@ -1,6 +1,8 @@
 # garage-app
 COCHERAPP es una aplicacion web para mantener un orden y un control de los clientes cocheras que deseen utilizarla.
 Posee un Login, carga de datos, muestra de datos y reservaciones
+
+
 *LOGIN:*
 El login permite al usuario ingresar tanto con google (clientes a futuro), como con un correo y una password creadas en el mismo.
 
