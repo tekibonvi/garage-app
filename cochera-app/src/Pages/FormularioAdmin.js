@@ -4,12 +4,13 @@ import { useState } from 'react';
 
 import './FormularioAdmin.css'
 
-const Formulario = () => {
+const FormularioAdmin = () => {
     
     const {register, formState: {errors} ,watch ,handleSubmit} = useForm();
-    
+
     const onSubmit = (data) =>{
-        console.log(data)
+        let arrayData = [data]
+        console.log(arrayData)
     };
 
     const [date, setDate] = useState();
@@ -21,7 +22,6 @@ const Formulario = () => {
     };
 
     const inicioSesion = watch('inicioSesion');
-    
 
     return (
         <div className='all-form'>
@@ -62,13 +62,12 @@ const Formulario = () => {
                     <div className='calendario'>
                         <label>FECHA DE NACIMIENTO: </label>
                         <input type='date' {...register('fecha',{
-                            required: true,
-                            min:'2006-09-29'})}
+                            required: true
+                        })}
                             value={date}
                             onChange={changeDate}
                         />
                         {errors.fecha?.type === 'required' && <p>Este campo es obligatorio</p>}
-                        {errors.fecha?.type === 'min' && <p>La persona cargada es menor de edad</p>}
 
                     </div>
 
@@ -79,7 +78,7 @@ const Formulario = () => {
                             minLength: 7,
                             maxLength: 13
                         })}/>
-                        {errors.telefono?.type === 'requiredC' && <p>Este campo es obligatorio</p>}
+                        {errors.telefono?.type === 'required' && <p>Este campo es obligatorio</p>}
                         {errors.telefono?.type === 'maxLength' && <p>El telefono debe tener 12 o menos numeros</p>}
                         {errors.telefono?.type === 'minLength' && <p>El telefono debe tener 8 o mas numeros</p>}
                     </div>
@@ -141,4 +140,4 @@ const Formulario = () => {
     );
 }
  
-export default Formulario;
+export default FormularioAdmin;
